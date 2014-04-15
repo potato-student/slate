@@ -11,7 +11,7 @@
   <!-- Check if javascript for threaded comments should be loaded -->
   <?php include 'includes/comment-check.php'; ?>
 
-	<!-- Wordpress footer -->
+	<!-- Wordpresssdf footer -->
 	<?php wp_footer(); ?>
 	</body>
 </html>

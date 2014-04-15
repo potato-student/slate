@@ -1,9 +1,13 @@
 /*
-Theme Name: Slate
+Theme Name: Slate Rocmar
 Theme URI: 
-Description: A Clean Slate
+Description: A Clean Slate for Rocmar
 Version: 1.0
-Author: Ismay Wolff
-Author URI: http://www.ismaywolff.nl
+Author: Lars Boesenach
+Author URI: http://www.lokaalgevonden.nl
 Tags: Slate
+Template: slate
 */
+
+
+@import url('../slate/style.css');

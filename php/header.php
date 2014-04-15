@@ -30,11 +30,26 @@
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/modernizr.js"></script>
 
-    <!-- Wordpress head function -->
+    <!-- Wordpress head functasdfasdfsddfson -->
     <?php wp_head(); ?>
 
   </head>
   <body <?php body_class(); ?> >
 
     <!-- Main navigation -->
-    <?php include 'includes/navigation.php'; ?>
+
+	<div class="u-gridContainer">
+		<?php include_once ('includes/navigation.php');	?>
+	</div>
+
+		
+	<div class="u-gridContainer">
+		<div class="Header">
+			<div class="Header-img">
+				<img src="#">
+				<div class="Header-text">
+					<p>Vraag vrijblijven hier een <a class="Button button--offerte">offerte</a> aan.</p>
+				</div>
+			</div>
+		</div>
+	</div>

@@ -18,7 +18,7 @@ dev_bower:          'bower_components'
 dev_php:            'php'
 # Production (remote)
 prod_theme_root:    '/wp-content/themes'
-prod_theme_current: '<%= dirs.prod_theme_root %>/slate'
+prod_theme_current: '<%= dirs.prod_theme_root %>/slate_rocmar'
 prod_css:           '<%= dirs.prod_theme_current %>/css'
 prod_js:            '<%= dirs.prod_theme_current %>/js'
 prod_js_standalone: '<%= dirs.prod_js %>/standalone'
