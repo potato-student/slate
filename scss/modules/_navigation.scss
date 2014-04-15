@@ -45,6 +45,7 @@
   &:last-of-type {
     margin-right: 0;
   }
+  
   &:nth-of-type(1)::after {
 	  content: "";
 	  display: inline-block;

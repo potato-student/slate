@@ -42,7 +42,7 @@
 		<?php include_once ('includes/navigation.php');	?>
 	</div>
 
-		
+		 
 	<div class="u-gridContainer">
 		<div class="Header">
 			<div class="Header-img">
