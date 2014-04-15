@@ -7,7 +7,7 @@ if ( ! function_exists( 'navigation_walker_setup' ) ):
 	function navigation_walker_setup(){
 
 		class Slate_Walker_Nav_Menu extends Walker_Nav_Menu {
-
+			$counter = 0;
 			
 			function start_lvl( &$output, $depth ) {
 
@@ -17,7 +17,14 @@ if ( ! function_exists( 'navigation_walker_setup' ) ):
 			}
 
 			function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-				
+				if($counter == 3){
+					$output .= '<li class="Logo"><img src="'.get_stylesheet_directory_uri().'/img/logo.png" class="Logo-img"/></li>';
+				}
+
+				if($dept == 0){
+					$counter++;
+				}
+
 				$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 				$li_attributes = '';
