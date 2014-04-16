@@ -44,22 +44,3 @@
   background: rgba($c-black,0.5);
 }
 
-// ----- Contact bar ----- //
-
-.Header-logo {
-  @extend .u-gridRow;
-  background: rgba($c-black,0.25);
-}
-
-// ----- Nav bar ----- //
-
-.Header-nav {
-  @extend .u-gridRow;
-  background: $c-blue;
-}
-
-// ----- Carousel ----- //
-
-.Header-carousel {
-  @extend .u-gridRow;
-}

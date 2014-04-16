@@ -51,7 +51,6 @@
   display: inline-block;
 //  margin: 0 rem(15px);
   padding: 15px 15px;
-
 }
 
 // ----- Navigation link ----- //
@@ -75,5 +74,13 @@
 	  bottom: -60px;
 	  left: 0;
   }
+}
+
+ul.dropdown {
+    display: block;
+}
+
+ul.is-hidden {
+    display: none;
 }
 

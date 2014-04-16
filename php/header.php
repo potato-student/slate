@@ -46,7 +46,7 @@
 	<div class="u-gridContainer">
 		<div class="Header">
 			<div class="Header-img">
-				<img src="#">
+				<img src="http://placekitten.com/980/300">
 				<div class="Header-text">
 					<p>Vraag vrijblijven hier een <a class="Button button--offerte">offerte</a> aan.</p>
 				</div>

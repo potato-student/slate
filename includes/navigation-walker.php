@@ -7,9 +7,8 @@ function navigation_walker_setup2(){
 			protected $counter = 0;
 			
 			function start_lvl( &$output, $depth ) {
-
 				$indent = str_repeat( "\t", $depth );
-				$output	   .= "\n$indent<ul>\n";
+				$output	   .= "\n$indent<ul class='dropdown is-hidden'>\n";
 				
 			}
 
@@ -18,7 +17,7 @@ function navigation_walker_setup2(){
 					$output .= '<li class="Logo"><img src="'.get_stylesheet_directory_uri().'/img/logo.png" class="Logo-img"/></li>';
 				}
 
-				if($dept == 0){
+				if($depth == 0){
 					$this->counter++;
 				}
 
@@ -32,7 +31,7 @@ function navigation_walker_setup2(){
 				$classes[] = ($item->current || $item->current_item_ancestor) ? 'is-active' : '';
 				$classes[] = 'menu-item-' . $item->ID;
 				$classes[] = 'Navigation-listItem';
-
+			
 				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 				$class_names = ' class="' . esc_attr( $class_names ) . '"';
 
@@ -48,8 +47,13 @@ function navigation_walker_setup2(){
 
 				$activeClass = ($item->current || $item->current_item_ancestor) ? 'is-active' : '';
 
-				$attributes .= ' class="Navigation-link Navigation-link--invertedBold '.$activeClass.'"';
+				$hasDropdown = '';
+				if($args->has_children) {
+					$hasDropdown = 'has-dropdown';
+				}
 
+
+				$attributes .= ' class="Navigation-link Navigation-link--invertedBold '.$activeClass.' '.$hasDropdown.'"';
 				$item_output = $args->before;
 				$item_output .= '<a'. $attributes .'>';
 				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
@@ -60,7 +64,7 @@ function navigation_walker_setup2(){
 			}
 
 			function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
-				
+
 				if ( !$element )
 					return;
 				
