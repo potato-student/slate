@@ -8,6 +8,8 @@
 .Header {
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
+  position: relative;
+  z-index: 99;
 }
 
 // -------------------------------------
@@ -39,8 +41,20 @@
 
 // ----- Contact bar ----- //
 
-.Header-contact {
+.Header-text {
   @extend .u-gridRow;
+  position: absolute;
   background: rgba($c-black,0.5);
+  height: 60px;
+  width: 100%;
+  bottom: 8px;
+  left: 0;
+  
+  p {
+	  color: white;
+	  text-align: center;
+	  font-size: rem(19px);
+
+  }
 }
 

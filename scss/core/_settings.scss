@@ -33,6 +33,8 @@
 // Hobo
 @include font-face(Hobo, '../fonts/hobo/hobo-webfont', normal, normal);
 
+
+
 // -------------------------------------
 // Variables
 // -------------------------------------
@@ -42,6 +44,7 @@
 $c-black : #1B1C17;
 $c-blue  : #0070AF;
 $c-white : #EFEFEF;
+$c-red   : #F00;
 
 // ----- Layout ----- //
 $l-whiteSpace: 0.5rem;
@@ -53,7 +56,7 @@ $l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
 
 // ----- Text ----- //
 
-$t-fontFamily       : 'Open Sans', $helvetica;
+$t-fontFamily       : "proxima-nova",sans-serif;
 $t-headerFontFamily : 'Open Sans', $helvetica;
 $t-fontSize         : 16px;
 $t-lineHeight       : 1.5;

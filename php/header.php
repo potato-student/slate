@@ -30,6 +30,9 @@
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/modernizr.js"></script>
 
+	<script type="text/javascript" src="//use.typekit.net/jrw2jox.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <!-- Wordpress head functasdfasdfsddfson -->
     <?php wp_head(); ?>
 
@@ -51,5 +54,11 @@
 					<p>Vraag vrijblijven hier een <a class="Button button--offerte">offerte</a> aan.</p>
 				</div>
 			</div>
+		</div>
+	</div>
+	
+	<div class="u-gridContainer">
+		<div class="content">
+			
 		</div>
 	</div>
