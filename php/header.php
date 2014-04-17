@@ -56,9 +56,3 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="u-gridContainer">
-			<div class="content">
-				
-			</div>
-		</div>
