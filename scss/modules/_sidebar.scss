@@ -5,16 +5,18 @@
 //
 // *************************************
 
+.Sidebar-wrap {
+	@include span-columns(4);
+	padding: 10px 25px;
+}
 
 .Sidebar {
-	@include span-columns(3);
 	background-image: url('../img/background-texture.png');
 	background-repeat: repeat; 
-	float: left;
-	height: auto;
 	border-radius: 15px;
-	margin: 30px 40px 20px 40px;
-	padding-bottom: 15px;
+	//margin: 30px 40px 20px 40px;
+	padding-bottom: 10px;
+	padding-top: 5px;
 	box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.15) inset;
 	
 	h3 {
@@ -27,11 +29,11 @@
 	}
 	
 	.textwidget {
-		margin-left: 50px;
+		margin-left: 25%;
 		line-height: 35px;
 	}
 	p,a {
-		float: left;
+
 		color: black;
 		font-weight: 200;
 		

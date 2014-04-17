@@ -42,6 +42,9 @@
 .u-gridCol6 {
 	@include span-columns(6);
 }
+.u-gridCol8 {
+	@include span-columns(8);
+}
 
 // -------------------------------------
 // Text

@@ -6,15 +6,39 @@
 // *************************************
 
 
-.Content {
+.Content-wrap {
 	background-color: white;
+	padding: 20px 10px;
+}
+
+.Content {
+	@include span-columns(8);
+	padding: 0 15px;
+	hr {
+		opacity: 0.4;
+	}
 	
-	.u-gridCol6 {
-		padding: 20px;
+	.u-gridCol8 {
+		p {
+			font-weight: 200;
+		}
+		
+		h2 {
+			font-size: 20px;
+			font-weight: 400;
+		}
 	}	
 }
 
 .Content-entry {
 	background-color: white;
-	padding: 1px 45px 0;
+//	padding: 1px 45px 0;
+}
+
+.homepage-images img{
+	max-width: 100%;
+	width: 170px;
+	margin: 14px;
+	border-radius: 10px;
+	box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
