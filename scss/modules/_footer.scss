@@ -7,11 +7,24 @@
 
 .Footer {
 	background-color: $c-blue;
+	
 }
 
 .Footer-inner {
-	h4, p {
-		color: white;
+	padding: 0 40px;
+	h4 {
+		color: $c-red;
+		line-height: 5px;
+		font-weight: 200;
+		margin: 40px 0 25px 0;
+		font-size: 22px;
+	}
+	p {
+		color: black;
+		line-height: 10px;
+		font-weight: 200;
+		margin-left: 5px;
+		font-size: 15px;
 	}
 }
 
@@ -20,9 +33,33 @@
 }
 
 .Footer-inner .widget {
-	@include span-columns(6);
+	@include span-columns(3);
+	
 }
 
 .Footer-socket {
 	color: white;
+}
+
+.sub-footer {
+	background-color: $c-darkblue;
+	p {
+		margin: 0px;
+		text-align: center;
+		color: white;
+		font-size: 13px;
+		padding: 5px 0;
+	}
+}
+
+#text-4 {
+	h4 {
+		opacity: 0;
+	}
+}
+
+#nav_menu-2 {
+	h4 {
+		margin-bottom: 15px;
+	}	
 }
