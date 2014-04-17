@@ -45,20 +45,20 @@
 		<?php include_once ('includes/navigation.php');	?>
 	</div>
 
-		 
-	<div class="u-gridContainer">
-		<div class="Header">
-			<div class="Header-img">
-				<img src="http://placekitten.com/980/300">
-				<div class="Header-text">
-					<p>Vraag vrijblijven hier een <a class="Button button--offerte">offerte</a> aan.</p>
+	<div class="u-gridContainer box-shadow-wrapper">	 
+		<div class="u-gridContainer">
+			<div class="Header">
+				<div class="Header-img">
+					<img src="http://placekitten.com/980/300">
+					<div class="Header-text">
+						<p>Vraag vrijblijven hier een <a class="Button button--offerte" href="/offerte-aanvragen/">offerte</a> aan.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="u-gridContainer">
-		<div class="content">
-			
+		
+		<div class="u-gridContainer">
+			<div class="content">
+				
+			</div>
 		</div>
-	</div>
