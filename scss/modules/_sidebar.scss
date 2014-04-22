@@ -14,7 +14,6 @@
 	background-image: url('../img/background-texture.png');
 	background-repeat: repeat; 
 	border-radius: 15px;
-	//margin: 30px 40px 20px 40px;
 	padding-bottom: 10px;
 	padding-top: 5px;
 	box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.15) inset;
@@ -25,7 +24,7 @@
 		font-weight: 400;
 		font-size: 20px;
 		margin: 8px;
-		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	}
 	
 	.textwidget {
@@ -40,7 +39,7 @@
 		&:hover {
 			color: $c-red;
 			text-decoration: none;
-			text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 		}
 	}
 }

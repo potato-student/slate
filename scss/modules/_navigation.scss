@@ -12,6 +12,10 @@
     position: relative;
     z-index: 99;
     box-shadow: 0px 30px 25px -15px rgba(0, 0, 0, 0.5);
+    
+    a {
+	    color: black;
+    }
 }
 
 // -------------------------------------
@@ -60,26 +64,24 @@
   }
   
   a {
-	  padding: 15px;
-	  &:focus {
-	  	text-decoration: none;
-	  }	  
-  }
-  &:hover {
-	  background-color: $c-lightgrey;
-	  
-	  a {
-	  	color: $c-red;
-	  	text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
-	  	text-decoration: none;
-	  }
+	padding: 15px;
+	&:focus {
+	text-decoration: none;
+	}	  
   }
 }
 
 // ----- Navigation link ----- //
 
 .Navigation-link {
+	&:hover {
+		//background-color: $c-lightgrey;
+		color: $c-red;
+	  	text-shadow: 1px 2px 3px rgba(0,0,0,0.25);
+	  	text-decoration: none;
+	  	font-weight: 400;
 	
+	}
 }
 
 .Navigation-link--invertedBold {
@@ -100,31 +102,29 @@
   }
 }
 
-ul.dropdown {
+.Navigation-list {
     display: block;
-//	transition: height 0.2s linear;
 }
 
-ul.is-hidden {
+.Navigation-list.is-hidden {
     display: none;
 }
 
-ul.dropdown {
+ul.Navigation-list {
 	position: absolute;
-	border: 0px solid #000;
+//	border: 0px solid #000;
 	background-color: #fafafa;
 	z-index: 101;
 	width: 142px;
 	top: 54px;
 	left: 0;
+	border-right: 3px solid $c-red;
+	border-left: 3px solid $c-red;
+	border-top: 0 solid black;
+	border-bottom: 3 solid $c-red;
 	
-	li:hover {
-		background-color: white;
-		
-		a {
-			color: $c-red;
-		}
-		
+	.Navigation-listItem {
+		padding: 5px 10px;
 	}
 }
 

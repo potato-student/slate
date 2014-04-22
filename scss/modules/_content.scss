@@ -32,17 +32,16 @@
 
 .Content-entry {
 	background-color: white;
-//	padding: 1px 45px 0;
 
-		h2 {
-			font-size: 22px;
-			font-weight: 400;
-		}
-		
-		p {
-			font-weight: 200;
-			font-size: 14px;
-		}
+	h2 {
+		font-size: 22px;
+		font-weight: 400;
+	}
+	
+	p {
+		font-weight: 200;
+		font-size: 14px;
+	}
 }
 
 .homepage-images img{
@@ -51,4 +50,23 @@
 	margin: 14px;
 	border-radius: 10px;
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+.adress {
+	
+}
+
+.adress-info {
+	line-height: 13px;
+	float: left;
+	margin-left: 20px;
+}
+
+.adress-map {
+	display: block;
+	float: left;
+	margin-left: 50px;
+}
+
+.hr-style.super-margin {
+	margin-top: 30px;
 }

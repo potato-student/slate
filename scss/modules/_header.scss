@@ -11,6 +11,8 @@
   position: relative;
   z-index: 95;
   background-color: white;
+  height: 400px;
+  overflow: hidden;
 }
 
 // -------------------------------------
@@ -48,7 +50,7 @@
   background: rgba($c-black,0.5);
   height: 60px;
   width: 100%;
-  bottom: 8px;
+  bottom: 0px;
   left: 0;
   
   p,a {

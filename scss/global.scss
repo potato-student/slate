@@ -64,3 +64,12 @@
 // -------------------------------------
 // Inbox
 // -------------------------------------
+
+
+.Navigation-list {
+    display: block;
+}
+
+.Navigation-list.is-hidden {
+    display: none;
+}

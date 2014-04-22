@@ -8,7 +8,7 @@ function navigation_walker_setup2(){
 			
 			function start_lvl( &$output, $depth ) {
 				$indent = str_repeat( "\t", $depth );
-				$output	   .= "\n$indent<ul class='dropdown is-hidden'>\n";
+				$output	   .= "\n$indent<ul class='Navigation-list Navigation-list--dropdown is-hidden'>\n";
 				
 			}
 
@@ -28,7 +28,7 @@ function navigation_walker_setup2(){
 				$class_names = $value = '';
 
 				$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-				$classes[] = ($args->has_children) ? 'dropdown' : '';
+				$classes[] = ($args->has_children) ? 'Navigation-listItem--hasDropdown' : '';
 				$classes[] = ($item->current || $item->current_item_ancestor) ? 'is-active' : '';
 				$classes[] = 'menu-item-' . $item->ID;
 				$classes[] = 'Navigation-listItem';
@@ -50,11 +50,11 @@ function navigation_walker_setup2(){
 
 				$hasDropdown = '';
 				if($args->has_children) {
-					$hasDropdown = 'has-dropdown';
+					$hasDropdown = 'Navigation-link--dropdownTrigger';
 				}
 
 
-				$attributes .= ' class="Navigation-link Navigation-link--invertedBold '.$activeClass.' '.$hasDropdown.'"';
+				$attributes .= ' class="Navigation-link '.$activeClass.' '.$hasDropdown.'"';
 				$item_output = $args->before;
 				$item_output .= '<a'. $attributes .'>';
 				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
