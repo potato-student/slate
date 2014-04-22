@@ -28,7 +28,6 @@
 
     <!-- Head scripts, avoid including scripts here -->
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/modernizr.js"></script>
 
 	<script type="text/javascript" src="//use.typekit.net/jrw2jox.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>

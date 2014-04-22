@@ -12,15 +12,13 @@
 }
 
 .Content {
-	@include span-columns(8);
-	padding: 0 15px;
 	hr {
 		opacity: 0.4;
 	}
 	
 	.u-gridCol8 {
 		p {
-			font-weight: 200;
+			font-weight: 300;
 		}
 		
 		h2 {
@@ -28,6 +26,17 @@
 			font-weight: 400;
 		}
 	}	
+}
+.Content--withSidebar {
+	@include span-columns(8);
+}
+
+.Content--fullwidth {
+	@include span-columns(12);
+	margin-top: -20px;
+	.Content-entry {
+		padding: 35px 40px;
+	}
 }
 
 .Content-entry {
@@ -39,7 +48,7 @@
 	}
 	
 	p {
-		font-weight: 200;
+		font-weight: 300;
 		font-size: 14px;
 	}
 }
@@ -58,13 +67,17 @@
 .adress-info {
 	line-height: 13px;
 	float: left;
-	margin-left: 20px;
+	margin-left: 50px;
+
+	p {
+		font-size: 17px;
+	}
 }
 
 .adress-map {
 	display: block;
 	float: left;
-	margin-left: 50px;
+	margin: 8px 0px 8px 75px;
 }
 
 .hr-style.super-margin {

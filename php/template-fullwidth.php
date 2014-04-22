@@ -8,7 +8,7 @@ Template Name: Page w/o sidebar
 
 	<div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article class="Content u-gridContainer" id="post-<?php the_ID(); ?>">
+		<article class="Content Content--fullwidth u-gridContainer" id="post-<?php the_ID(); ?>">
 			<div class="Content-entry">
 				<h2><?php the_title(); ?></h2>
 				<div class="Content-text">
