@@ -29,18 +29,31 @@
     <!-- Head scripts, avoid including scripts here -->
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
 
+
+
 	<script type="text/javascript" src="//use.typekit.net/jrw2jox.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <!-- Wordpress head functasdfasdfsddfson -->
+    
+    <!-- Include svg icons -->
+  <?php include_once("ico/sprites.svg"); ?>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
     <?php wp_head(); ?>
 
   </head>
   <body <?php body_class(); ?> >
 
+
     <!-- Main navigation -->
 
 	<div class="u-gridContainer">
+		<div class="Logo-mob">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"/>
+		</div>
+
 		<?php include_once ('includes/navigation.php');	?>
 	</div>
 

@@ -6,6 +6,10 @@
 // *************************************
 
 
+h2 {
+	font-weight: 400;
+}
+
 .Content-wrap {
 	background-color: white;
 	padding: 20px 10px;
@@ -60,14 +64,18 @@
 	border-radius: 10px;
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
-.adress {
-	
+
+
+#map_canvas {
+	width: 100%;
+	height: 200px;
+	border: 1px solid black;
 }
 
 .adress-info {
 	line-height: 13px;
-	float: left;
-	margin-left: 50px;
+//	float: left;
+	//margin-left: 35px;
 
 	p {
 		font-size: 17px;
@@ -75,11 +83,134 @@
 }
 
 .adress-map {
-	display: block;
-	float: left;
-	margin: 8px 0px 8px 75px;
+//	margin: 8px 0px 8px 75px;
 }
 
 .hr-style.super-margin {
 	margin-top: 30px;
+}
+
+
+
+p.contact-page-p {
+	font-size: 18px;
+	font-size: 400;
+}
+
+//----------------------------------------
+// ------------ form styles --------------
+
+label.gfield_label {
+	font-weight: 300 !important;
+}
+
+input.gform_button {
+	background-color: #D8EDF5;
+	border-radius: 10px;
+	border: 0px;
+	padding: 5px 10px;
+	color: #41316C;
+	
+	&:hover {
+		background-color: #41316C;
+		color: #D8EDF5;
+	}
+}
+
+.ginput_container {		
+	input, textarea {
+		background-color: rgba(252, 254, 255, 1);
+		border-radius: 7px;
+		border: 2px solid rgba(168, 216, 234, 1);
+		color: #41316C;
+		font-size: 14px !important;
+	}
+}
+//----------------------------------------
+
+
+
+//===============================================================================
+//                                 @media queries
+//===============================================================================
+
+@media all and (max-width: 960px) {	
+	.adress-info {
+		margin-left: 0px;
+	}
+	
+	.adress-map {
+	}
+}
+
+
+@media all and (max-width: 930px) {	
+	.homepage-images img {
+		width: 150px;
+	}
+}
+
+@media all and (max-width: 830px) {	
+	.homepage-images img {
+		width: 130px;
+	}
+	
+	.Sidebar {
+		h3.widgettitle {
+			font-size: 16px;
+		}
+		a {
+			font-size: 14px;
+		}
+	}
+}
+
+@media all and (max-width: 650px) {	
+	.Sidebar {
+		display: none;
+	}
+	
+
+	
+	.adress.u-gridCol4 {
+		@include span-columns(12);
+	}
+
+	.adress-map.u-gridCol8 {
+		padding-top: 20px;
+		@include span-columns(12);
+	}
+
+	
+	.Content--withSidebar {
+		@include span-columns(12);
+	}
+//-----------------------------------------	
+//---------content outside margins---------
+
+	.Content-entry {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.page-id-27, .page-id-8 {
+		.Content-entry {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+//-----------------------------------------
+}
+
+
+@media all and (max-width: 535px) {	
+	.homepage-images {
+		text-align: center;
+
+		img {
+			width: auto;
+			margin: 15px 0;
+			max-width: 100%;
+		}
+	}
 }

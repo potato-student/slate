@@ -13,6 +13,11 @@
     z-index: 99;
     box-shadow: 0px 30px 25px -15px rgba(0, 0, 0, 0.5);
     
+    background-color: white;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+
+    
     a {
 	    color: black;
     }
@@ -43,13 +48,13 @@
 // Submodules
 // -------------------------------------
 
+svg.Icon.Icon--inline {
+	font-size: 35px;	
+} 
 
 .Navigation ul {
   @include clearfix();
   margin: 0;
-  background-color: white;
-  border-top: 3px solid red;
-  border-bottom: 3px solid red;
 }
 
 // ----- List item ----- //
@@ -64,8 +69,8 @@
   }
   
   a {
-	padding: 0 15px;
-	display: inline-block;
+	padding: 0 5px 0 30px;
+//  display: block;
 	&:focus {
 	text-decoration: none;
 	}	  
@@ -113,7 +118,6 @@
 
 ul.Navigation-list {
 	position: absolute;
-//	border: 0px solid #000;
 	background-color: #fafafa;
 	z-index: 101;
 	width: auto;
@@ -124,8 +128,140 @@ ul.Navigation-list {
 	border-top: 0 solid black;
 	border-bottom: 3 solid $c-red;
 	
+	
 	.Navigation-listItem {
 		padding: 5px 10px;
+		
+		a {
+			padding: 0;
+		}
 	}
 }
 
+.triangle {
+	@include triangle(12px, gray, down);
+	display: block;
+	float: right;
+	margin-top: 10px;
+	margin-left: 6px;
+	border-width: 4px;
+	margin-right: 3px;	
+}
+
+
+
+
+a.Navigation-link--dropdownTrigger:hover {
+	.triangle {
+		@include triangle(12px, black, down);
+		border-width: 6px;
+		margin-right: 0px;
+		margin-left: 5px;
+		
+	}
+}
+
+
+//===============================================================================
+//                                 @media queries
+//===============================================================================
+
+@media all and (max-width: 930px) {	
+	.Logo img {
+		bottom: -50px;
+		left: 10px;
+		max-width: 85%;
+	}
+	.Navigation-listItem {
+		font-size: 13px;
+	}
+	
+	ul.Navigation-list {
+		top: 50px;
+	}
+	
+	a.Navigation-link--dropdownTrigger:hover {
+		.triangle {
+			margin-left: 6px;
+			border-width: 4px;
+			margin-right: 3px;				
+		}
+	}
+}
+
+
+@media all and (max-width: 795px) {	
+	.Logo {
+		display: none;
+	}	
+	
+	.Logo-mob {
+
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 99999999;
+		text-align: center;
+		padding-top: 20px;
+		width: 150px;
+
+		img {
+			max-width: 150px;
+		}
+	}
+	.Navigation {
+		margin-top: -75px;
+	}
+	
+	.Navigation ul#menu-menu {
+		padding-top: 10px;
+		position: relative;
+		padding-bottom: 10px;
+		background-color: #fafafa
+	}
+	.Navigation-listItem {
+		display: block;
+		padding: 8px 0 0 0;
+		margin: 0px 20px;		
+
+		a {
+			padding: 10px 14px;
+			display: inline-block;
+			background-color: #D8EDF5;
+			border-radius: 10px;
+			width: 100%;
+			font-size: 16px;
+
+		}
+	}
+	
+	ul.Navigation-list {
+		position: static;
+		display: block;
+		background-color: #fafafa;
+		width: auto;
+		border: 0px solid white;
+		padding-top: 5px;
+				
+		.Navigation-listItem {
+			padding: 5px 0;
+			
+			a {
+				background-color: #BDD3DB;
+			}
+		}
+	}
+}
+
+
+@media all and (min-width: 796px) {	
+	.Logo-mob {
+		display: none;
+	}
+}
+
+@media all and (max-width: 650px) {	
+	.Navigation {
+		box-shadow: none;
+	}
+}

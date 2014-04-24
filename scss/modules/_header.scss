@@ -59,6 +59,7 @@
 	text-align: center;
 	font-size: 1.4rem;
 	margin-top:  3px;
+	font-weight: 300;
 
   }
 }
@@ -70,4 +71,37 @@
 
 .box-shadow-wrapper {
 	box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.5);
+}
+
+
+
+//===============================================================================
+//                                 @media queries
+//===============================================================================
+
+@media all and (max-width: 930px) {	
+	.Header {
+		height: 350px;
+	}
+}
+
+
+@media all and (max-width: 820px) {	
+	.Header {
+		height: 285px;
+	}
+	.Header-text{
+		height: 50px;
+		p {
+			font-size: 18px;
+			margin-top: 0px;
+			line-height: 25px;
+		}
+	}
+}
+
+@media all and (max-width: 650px) {	
+	.Header {
+		display: none;
+	}
 }
