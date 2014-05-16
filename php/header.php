@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title><?php wp_title( '|', true, 'right' ); ?><?php echo get_bloginfo( 'name' ); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?><?php //echo get_bloginfo( 'name' ); ?></title>
 
     <!-- Mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +29,7 @@
 
     <!-- Head scripts, avoid including scripts here -->
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
+
 
 
 
@@ -51,10 +52,12 @@
     <!-- Main navigation -->
 
 	<div class="u-gridContainer">
-		<div class="Logo-mob">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"/>
-		</div>
-
+		<a href="/home/">
+			<div class="Logo-mob">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"/>
+			</div>
+		</a>
+		
 		<?php include_once ('includes/navigation.php');	?>
 	</div>
 
@@ -64,8 +67,9 @@
 				<div class="Header-img">
 					<img src="/files/2014/04/header-bg-img2.jpg">
 					<div class="Header-text">
-						<p>Vraag vrijblijven hier een <a class="Button button--offerte" href="/offerte-aanvragen/">offerte</a> aan.</p>
+						<p>Vraag vrijblijvend hier een <a class="Button button--offerte" href="/offerte-aanvragen/">offerte</a> aan.</p>
 					</div>
 				</div>
 			</div>
 		</div>
+		

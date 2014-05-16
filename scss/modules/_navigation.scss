@@ -126,12 +126,11 @@ ul.Navigation-list {
 	border-right: 3px solid $c-red;
 	border-left: 3px solid $c-red;
 	border-top: 0 solid black;
-	border-bottom: 3 solid $c-red;
-	
+	border-bottom: 3px solid $c-red;	
+
 	
 	.Navigation-listItem {
 		padding: 5px 10px;
-		
 		a {
 			padding: 0;
 		}
@@ -196,7 +195,6 @@ a.Navigation-link--dropdownTrigger:hover {
 	}	
 	
 	.Logo-mob {
-
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
@@ -266,3 +264,17 @@ a.Navigation-link--dropdownTrigger:hover {
 		box-shadow: none;
 	}
 }
+
+
+//---------footer not placed sitemap adjustment-----------
+
+/*
+#menu-footermenu {
+	select {
+		background-color: white;
+		border: 0px;
+		border-radius: 10px;
+		padding: 4px 4px 4px 10px;
+	}
+}
+*/

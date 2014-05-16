@@ -66,6 +66,7 @@ h2 {
 }
 
 
+
 #map_canvas {
 	width: 100%;
 	height: 200px;
@@ -79,6 +80,10 @@ h2 {
 
 	p {
 		font-size: 17px;
+	}
+	
+	a {
+		color: red;
 	}
 }
 
@@ -96,6 +101,71 @@ p.contact-page-p {
 	font-size: 18px;
 	font-size: 400;
 }
+
+.Projecten-images {
+	width: 32%;
+	float: left;
+	padding: 7px;
+	img {
+		border-radius: 10px;
+	}
+	
+	&:hover {
+		opacity: 0.9;
+	}
+	
+}
+
+
+.youtube-vid {
+	overflow: hidden;
+	background-image: url('../img/youtube-vid.jpg');
+	background-size: cover;
+	background-position: center center;
+	margin-top: 20px;
+	height: 142px;
+	border-radius: 15px;
+	p {
+		text-align: center;
+		color: transparent;
+		font-size: 22px;			
+		line-height: 0px;
+		margin-top: 0px;
+
+		-webkit-transition: all 0.5s ease; 
+		-moz-transition: all 0.5s ease; 
+		-o-transition: all 0.5s ease; 
+	}	
+}
+
+
+.youtube-vid:hover {	
+	p,a {
+		text-decoration: none;
+		color: white;
+		background-color: rgba(0,0,0,0.5);			
+		line-height: 142px;
+	}
+}
+
+
+.youtube-vid.mob {
+	display: none;
+	height: 200px;
+	border-radius: 15px;
+	max-width: 300px;
+	margin: 20px auto;
+	p {
+		line-height: 0px;
+	}
+	
+	&:hover {
+		p {	
+			line-height: 200px;
+		}
+	}
+}
+
 
 //----------------------------------------
 // ------------ form styles --------------
@@ -138,9 +208,6 @@ input.gform_button {
 	.adress-info {
 		margin-left: 0px;
 	}
-	
-	.adress-map {
-	}
 }
 
 
@@ -151,8 +218,14 @@ input.gform_button {
 }
 
 @media all and (max-width: 830px) {	
-	.homepage-images img {
-		width: 130px;
+	.homepage-images {
+		text-align: center;
+
+		img {
+			width: auto;
+			margin: 15px 0;
+			max-width: 100%;
+		}
 	}
 	
 	.Sidebar {
@@ -170,8 +243,17 @@ input.gform_button {
 		display: none;
 	}
 	
-
+	.youtube-vid {
+		display: none;
+	}
+	.youtube-vid.mob {
+		display: block;
+	}
 	
+	.Projecten-images {
+		width: 48%;
+	}
+		
 	.adress.u-gridCol4 {
 		@include span-columns(12);
 	}
@@ -203,14 +285,10 @@ input.gform_button {
 }
 
 
-@media all and (max-width: 535px) {	
-	.homepage-images {
-		text-align: center;
 
-		img {
-			width: auto;
-			margin: 15px 0;
-			max-width: 100%;
-		}
+
+@media all and (max-width: 400px) {	
+	.Projecten-images {
+		width: 95%;
 	}
 }
