@@ -12,7 +12,7 @@ Template Name: Page w/ sidebar on left
 			</div>
 			
 			<div class="youtube-vid">
-				<a href="http://www.youtube.com/watch?v=fH4RkI4AQxA"><p>Bekijk de video<p></a>		
+				<a target="_blank" href="http://www.youtube.com/watch?v=fH4RkI4AQxA"><p>Bekijk de video<p></a>		
 			</div>
 		</div>
 

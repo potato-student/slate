@@ -167,6 +167,24 @@ p.contact-page-p {
 }
 
 
+a.page-numbers {
+	color: $c-red;
+	&:hover {
+		background-color: #D8EDF5 !important;
+		color: #41316C !important;
+	}
+}
+.ngg-navigation {
+	.prev, .next {
+		color: $c-red !important;
+		&:hover {
+			background-color: #D8EDF5 !important;
+			color: #41316C !important;
+		}
+	}
+}
+
+
 //----------------------------------------
 // ------------ form styles --------------
 

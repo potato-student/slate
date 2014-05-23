@@ -20,6 +20,9 @@ Template Name: Aanbouw Papendrecht
 				<?php } ?>
 				
 				<div class="Content-entry">
+
+
+<!--
 					<div class="Projecten-images">
 						<a href="/files/2014/05/aanbouw-papendrecht-18.jpg">
 						<img src="/files/2014/05/aanbouw-papendrecht-18.jpg">
@@ -44,6 +47,7 @@ Template Name: Aanbouw Papendrecht
 						<a href="/files/2014/05/aanbouw-papendrecht-22.jpg">
 						<img src="/files/2014/05/aanbouw-papendrecht-22.jpg">
 					</div>
+-->
 					
 					<?php the_content(); ?>
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
