@@ -167,6 +167,10 @@ p.contact-page-p {
 }
 
 
+
+
+//========== CSS ============
+
 a.page-numbers {
 	color: $c-red;
 	&:hover {
@@ -183,6 +187,62 @@ a.page-numbers {
 		}
 	}
 }
+
+
+body .ngg-albumoverview {   
+    width: 165px;
+    clear: both;
+    display: inline-block !important;
+    margin: 11px 2px 2px 2px;
+}
+
+
+.ngg-album {
+    border: 2px solid #a81010 !important;
+ }
+
+.ngg-description {
+    color: #a81010;
+}
+.ngg-description strong {
+    
+    color: #a81010;
+
+}
+
+.ngg-description {
+    text-align: center;
+    font-size: 16px;
+    }
+.ngg-albumtitle {
+    text-align: center;
+    }
+.ngg-albumtitle  a {
+        text-decoration: none !important;
+    }
+.ngg-thumbnail {
+    text-align: center;
+    width: 100%;
+}
+
+.ngg-gallery-thumbnail img {
+    padding: 0px;
+    border: 0px;
+    margin: 0px 0px 5px 5px; 
+}
+
+.slideshowlink {
+	display: none;
+}
+
+.ngg-hr {
+	background-color: grey;
+	height: 2px;
+	margin-bottom: 40px;
+	margin-right: 50px;
+}
+
+//=============================
 
 
 //----------------------------------------
