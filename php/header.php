@@ -64,9 +64,13 @@
 	<div class="u-gridContainer box-shadow-wrapper">	 
 		<div class="u-gridContainer">
 			<div class="Header">
-				<div class="Header-img">
-					<img src="/files/2014/04/header-bg-img2.jpg">
-					<div class="Header-text">
+				<div class="Slider">
+	                <ul class="Slider-slider bxslider">
+	                    <li class="Slider-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-1.jpg" /></li>
+	                    <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-2.jpg" /></li>
+	                    <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-3.jpg" /></li>
+	                </ul>
+	                <div class="Header-text">
 						<p>Vraag vrijblijvend hier een <a class="Button button--offerte" href="/offerte-aanvragen/">offerte</a> aan.</p>
 					</div>
 				</div>
