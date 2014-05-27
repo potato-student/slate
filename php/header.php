@@ -67,27 +67,25 @@
 				<div class="Slider">
 					<ul class="Slider-slider bxslider">
 						<?php if(is_page('dakkapellen')) { ?>
-	                    <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-1.jpg" /></li>
-	                    <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-2.jpg" /></li>
-	                    <li class="Slider-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-3.jpg" /></li>
- 
-						<?php } ?>
-						<?php elseif(is_page('kozijnen')) { ?>
-
-						<?php } ?>
-						<?php elseif(is_page('badkamers')) { ?>
-  
-						<?php } ?>
-						<?php elseif(is_page('aanbouw')) { ?>
-
-						<?php } ?>
-						<?php elseif(is_page('onderhoud')) { ?>
-
-						<?php } ?>
-						<?php elseif(is_page('sierpleister')) { ?>
-
+		                    <li class="Slider-img one"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/dakkapellen-1.jpg" /></li>
+		                    <li class="Slider-img two"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/dakkapellen-2.jpg" /></li>
+		                    <li class="Slider-img three"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/dakkapellen-3.jpg" /></li> 
+						<?php } elseif(is_page('kozijnen')) { ?>
+							<li class="Slider-img four"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/kozijnen-1.jpg" /></li>
+		                    <li class="Slider-img five"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/kozijnen-2.jpg" /></li>
+		                    <li class="Slider-img six"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/kozijnen-3.jpg" /></li>
+						<?php } elseif(is_page('badkamers')) { ?>
+							<li class="Slider-img seven"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/badkamer-1.jpg" /></li>
+		                    <li class="Slider-img eight"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/badkamer-2.jpg" /></li>
+		                    <li class="Slider-img nine"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/badkamer-3.jpg" /></li>
+						<?php } elseif(is_page('aanbouw')) { ?>
+		                    <li class="Slider-img ten"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/aanbouw-1.jpg" /></li>
+		                    <li class="Slider-img eleven"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/aanbouw-2.jpg" /></li>
+		                    <li class="Slider-img twelve"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/aanbouw-3.jpg" /></li>
 						<?php } else { //images hieronder komen op alle andere pagina's, zoals home, contact etc. ?>
-
+							<li class="Slider-img nineteen"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-1.jpg" /></li>
+		                    <li class="Slider-img twenty"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-2.jpg" /></li>
+		                    <li class="Slider-img twentyone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-3.jpg" /></li>
 						<?php } ?>
 	                </ul>
 	                <div class="Header-text">
@@ -96,4 +94,3 @@
 				</div>
 			</div>
 		</div>
-		
