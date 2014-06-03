@@ -83,11 +83,18 @@
 		                    <li class="Slider-img eleven"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/aanbouw-2.jpg" /></li>
 		                    <li class="Slider-img twelve"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/aanbouw-3.jpg" /></li>
 						<?php } else { //images hieronder komen op alle andere pagina's, zoals home, contact etc. ?>
-							<li class="Slider-img nineteen"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-1.jpg" /></li>
 		                    <li class="Slider-img twenty"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-2.jpg" /></li>
 		                    <li class="Slider-img twentyone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-3.jpg" /></li>
+		                    <li class="Slider-img twentytwo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-4.jpg" /></li>
+		                    <li class="Slider-img twentytwo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-5.jpg" /></li>
+		                    <li class="Slider-img twentyfour"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-6.jpg" /></li>
+		                    <li class="Slider-img twentyfive"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-7.jpg" /></li>
+		                    <li class="Slider-img twentysix"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-8.jpg" /></li>
+		                    <li class="Slider-img twentyseven"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-9.jpg" /></li>
+		                    <li class="Slider-img twentyeight"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slides/slides-10.jpg" /></li>
 						<?php } ?>
 	                </ul>
+	                
 	                <div class="Header-text">
 						<p>Vraag vrijblijvend hier een <a class="Button button--offerte" href="/offerte-aanvragen/">offerte</a> aan.</p>
 					</div>

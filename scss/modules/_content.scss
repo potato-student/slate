@@ -167,6 +167,12 @@ p.contact-page-p {
 }
 
 
+.Slider-img {
+	.one {
+		background-position: -30px;
+	}
+}
+
 
 
 //========== CSS ============
@@ -240,6 +246,7 @@ body .ngg-albumoverview {
 	height: 2px;
 	margin-bottom: 40px;
 	margin-right: 50px;
+	margin-top: 20px;
 }
 
 //=============================
@@ -330,6 +337,10 @@ input.gform_button {
 	
 	.youtube-vid {
 		display: none;
+	}
+	
+	.youtube-vid.mob {
+		display: block;
 	}
 		
 	.Projecten-images {

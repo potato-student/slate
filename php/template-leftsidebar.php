@@ -10,8 +10,12 @@ Template Name: Page w/ sidebar on left
 			<div class="Sidebar">
 				<?php get_sidebar(); ?>
 			</div>
+			
+			<div class="youtube-vid">
+				<a target="_blank" href="http://www.youtube.com/watch?v=fH4RkI4AQxA"><p>Bekijk de video<p></a>		
+			</div>
 		</div>
-
+		
 		<div class="Content Content--withSidebar">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
